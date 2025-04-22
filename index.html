@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebaar">
+            <li onclick = hideSidebaar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Product</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick = showSidebaar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebaar(){
+            const sidebaar = document. querySelector('.sidebaar')
+            sidebaar.style.display = 'flex'
+        }
+
+        function hideSidebaar(){
+             const sidebaar = document. querySelector('.sidebaar')
+            sidebaar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
