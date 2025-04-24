@@ -14,6 +14,11 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.bold{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -89,5 +94,9 @@ nav li:first-child{
 @media(max-width: 400px){
     .sidebaar{
         width : 100%
+    }
+    .bold{
+        font-size: 1rem;
+        font-weight: 700;
     }
 }
